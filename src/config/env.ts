@@ -1,7 +1,7 @@
 export const environment = {
     nextAuthSecret: process.env.NEXTAUTH_SECRET,
     nextAuthUrl: process.env.NEXTAUTH_URL,
-    hawkbitApiUrl: process.env.NEXT_PUBLIC_HAWKBIT_API_URL,
+    hawkbitApiUrl: process.env.HAWKBIT_API_URL ?? process.env.NEXT_PUBLIC_HAWKBIT_API_URL,
 
     // Optional OIDC provider (e.g. Keycloak, Auth0, Okta — any standard OIDC issuer).
     // When set, a "Sign in via OIDC" button appears on the login page.
